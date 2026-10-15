@@ -1,0 +1,2 @@
+import { useState } from 'react';
+export default function Counter(){const [count,setCount]=useState(0);return <div className="control-stack"><p className="big-value">{count}</p><div className="button-row"><button onClick={()=>setCount(v=>v-1)} aria-label="Decrease counter">−</button><button onClick={()=>setCount(v=>v+1)}>Increase</button><button className="button-muted" onClick={()=>setCount(0)}>Reset</button></div></div>}
